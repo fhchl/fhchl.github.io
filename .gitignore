@@ -1,0 +1,7 @@
+*.ipynb_checkpoints*
+output
+cache
+.doit.db*
+__pycache__
+output
+Pipfile.lock
