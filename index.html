@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Description comes here">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Franz blogs his notes</title>
+<link href="assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+<link href="assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
+<link rel="canonical" href="https://fhchl.github.io/">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+    },
+    displayAlign: 'center', // Change this to 'left' if you want left-aligned equations.
+    "HTML-CSS": {
+        styles: {'.MathJax_Display': {"margin": 0}}
+    }
+});
+</script><!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/2D-plotting-of-non-ufuncs-with-matplotlib/" type="text/html">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark static-top mb-4"><div class="container">
+<!-- This keeps the margins nice -->
+        <a class="navbar-brand" href="https://fhchl.github.io/">
+
+            <span id="blog-title">Franz blogs his notes</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a href="about" class="nav-link">About</a>
+                </li>
+<li class="nav-item">
+<a href="archive.html" class="nav-link">Archive</a>
+                </li>
+<li class="nav-item">
+<a href="rss.xml" class="nav-link">RSS feed</a>
+
+                
+            </li>
+</ul>
+<ul class="navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+        
+
+    
+
+
+    
+<div class="postindex">
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2D-plotting-of-non-ufuncs-with-matplotlib/" class="u-url">Usable formula for long term average spectrum of music</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Franz Heuchel
+            </span></p>
+            <p class="dateline"><a href="posts/2D-plotting-of-non-ufuncs-with-matplotlib/" rel="bookmark"><time class="published dt-published" datetime="2017-10-25T19:52:05Z" title="2017-10-25 19:52">2017-10-25 19:52</time></a></p>
+        </div>
+    </header><div class="p-summary entry-summary">
+    <div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Knowing the average power spectrum of music can be useful when simulating the sound field and sound pressure levels at music events. In a recently published <a href="http://www.aes.org/e-lib/browse.cfm?elib=18638">conference paper</a> this quantity was computed over 12345 (what a number) popular music tracks. However, the piece-wise quadratic formula that fits this spectrum is defined over some arbitrary bins and not the frequency domain. Let's do that here.
+</p>
+<p class="more"><a href="posts/2D-plotting-of-non-ufuncs-with-matplotlib/">Read more…</a></p>
+</div>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/meshgrid-and-2d-plotting/" class="u-url">Meshgrid and 2D plotting</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Franz Heuchel
+            </span></p>
+            <p class="dateline"><a href="posts/meshgrid-and-2d-plotting/" rel="bookmark"><time class="published dt-published" datetime="2017-10-18T19:52:05Z" title="2017-10-18 19:52">2017-10-18 19:52</time></a></p>
+        </div>
+    </header><div class="p-summary entry-summary">
+    <div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Maybe you have had this experience. You want to make a nice <code>pcolor</code> or surface plot of a 2D function or dataset over space ($(x, y)$ coordinates). <em>But</em>:</p>
+<ul>
+<li>
+<code>pcolor</code>, <code>contour</code> or <code>surface_plot</code> need inputs in meshgrid form <code>(X, Y, Z)</code>
+</li>
+<li>Your data is in a different form, e.g.<ul>
+<li>the function takes coordinates in vector form <code>r = [x, y]</code>
+</li>
+<li>the data is parameterized by two 1D arrays <code>x = [x1, x2, ...]</code>, <code>y = [y1, y2, ...]</code>
+</li>
+</ul>
+</li>
+</ul>
+<p>Let's look at our options.
+</p>
+<p class="more"><a href="posts/meshgrid-and-2d-plotting/">Read more…</a></p>
+</div>
+</div>
+</div>
+    </div>
+    </article>
+</div>
+
+
+
+
+
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" integrity="sha256-SDRP1VVYu+tgAGKhddBSl5+ezofHKZeI+OzxakbIe/Y=" crossorigin="anonymous"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+    },
+    displayAlign: 'center', // Change this to 'left' if you want left-aligned equations.
+    "HTML-CSS": {
+        styles: {'.MathJax_Display': {"margin": 0}}
+    }
+});
+</script><!--End of body content--><footer id="footer">
+            Contents © 2018         <a href="mailto:franz.heuchel@gmail.com">Franz Heuchel</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+        </footer>
+</div>
+</div>
+
+
+        <script src="assets/js/all-nocdn.js"></script><!-- fancy dates --><script>
+    moment.locale("en");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates --><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element) {
+            return element.getElementsByTagName('img')[0].alt;
+    }});
+    </script>
+</body>
+</html>

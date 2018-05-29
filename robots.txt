@@ -1,0 +1,4 @@
+Sitemap: https://fhchl.github.io/sitemapindex.xml
+
+User-Agent: *
+Host: fhchl.github.io
