@@ -4,9 +4,13 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-nikola = {extras = ["extras"]}
+nikola = {extras = ["extras"], version = "*"}
+response = {git = "https://github.com/fhchl/Response.git"}
+pysoundfile = "*"
+jupyter-contrib-nbextensions = "*"
 
 [dev-packages]
+notebook = "*"
 
 [requires]
-python_version = "3.6"
+python_version = "3.7"

@@ -17,7 +17,7 @@ import time
 
 # Data about this site
 BLOG_AUTHOR = "Franz Heuchel"  # (translatable)
-BLOG_TITLE = "Franz blogs his notes"  # (translatable)
+BLOG_TITLE = "fhchl"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
 SITE_URL = "https://fhchl.github.io/"
@@ -511,7 +511,7 @@ HIDDEN_CATEGORIES = []
 
 # If ENABLE_AUTHOR_PAGES is set to True and there is more than one
 # author, author pages are generated.
-# ENABLE_AUTHOR_PAGES = True
+ENABLE_AUTHOR_PAGES = False
 
 # Path to author pages. Final locations are:
 # output / TRANSLATION[lang] / AUTHOR_PATH / index.html (list of authors)
@@ -538,7 +538,7 @@ HIDDEN_CATEGORIES = []
 # If you do not want to display an author publicly, you can mark it as hidden.
 # The author will not be displayed on the author list page and posts.
 # Tag pages will still be generated.
-HIDDEN_AUTHORS = ['Guest']
+HIDDEN_AUTHORS = ['Guest', 'Franz Heuchel']
 
 # Final location for the main blog page and sibling paginated pages is
 # output / TRANSLATION[lang] / INDEX_PATH / index-*.html
@@ -1135,7 +1135,7 @@ MARKDOWN_EXTENSIONS = ['markdown.extensions.fenced_code', 'markdown.extensions.c
 
 # Only include teasers in Atom and RSS feeds. Disabling include the full
 # content. Defaults to True.
-FEED_TEASERS = False
+# FEED_TEASERS = False
 
 # Strip HTML from Atom and RSS feed summaries and content. Defaults to False.
 # FEED_PLAIN = False
