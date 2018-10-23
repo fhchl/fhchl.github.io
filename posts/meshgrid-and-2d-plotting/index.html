@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Meshgrid and 2D plotting | Franz blogs his notes</title>
+<title>Meshgrid and 2D plotting | fhchl</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
@@ -26,7 +26,7 @@ MathJax.Hub.Config({
 });
 </script><!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Franz Heuchel">
 <link rel="next" href="../2D-plotting-of-non-ufuncs-with-matplotlib/" title="Usable formula for long term average spectrum of music" type="text/html">
-<meta property="og:site_name" content="Franz blogs his notes">
+<meta property="og:site_name" content="fhchl">
 <meta property="og:title" content="Meshgrid and 2D plotting">
 <meta property="og:url" content="https://fhchl.github.io/posts/meshgrid-and-2d-plotting/">
 <meta property="og:description" content="Maybe you have had this experience. You want to make a nice pcolor or surface plot of a 2D function or dataset over space ($(x, y)$ coordinates). But:
@@ -40,11 +40,13 @@ pcolor, contour or surface_plot need inputs in m">
 
 <!-- Menubar -->
 
-<nav class="navbar navbar-expand-md navbar-dark bg-dark static-top mb-4"><div class="container">
+<nav class="navbar navbar-expand-md static-top mb-4
+navbar-dark bg-dark
+"><div class="container">
 <!-- This keeps the margins nice -->
         <a class="navbar-brand" href="https://fhchl.github.io/">
 
-            <span id="blog-title">Franz blogs his notes</span>
+            <span id="blog-title">fhchl</span>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -87,7 +89,10 @@ pcolor, contour or surface_plot need inputs in m">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                     Franz Heuchel
             </span></p>
-            <p class="dateline"><a href="." rel="bookmark"><time class="published dt-published" datetime="2017-10-18T19:52:05Z" itemprop="datePublished" title="2017-10-18 19:52">2017-10-18 19:52</time></a></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2017-10-18T19:52:05Z" itemprop="datePublished" title="2017-10-18 19:52">2017-10-18 19:52</time></a>
+            </p>
             
         <p class="sourceline"><a href="index.ipynb" class="sourcelink">Source</a></p>
 
@@ -148,7 +153,7 @@ pcolor, contour or surface_plot need inputs in m">
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -158,7 +163,7 @@ pcolor, contour or surface_plot need inputs in m">
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 
@@ -198,7 +203,7 @@ pcolor, contour or surface_plot need inputs in m">
 <span class="c1"># e.g. monopole_r(np.array([x, y]))</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -226,7 +231,7 @@ pcolor, contour or surface_plot need inputs in m">
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -236,7 +241,7 @@ pcolor, contour or surface_plot need inputs in m">
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 
@@ -296,7 +301,7 @@ pcolor, contour or surface_plot need inputs in m">
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -306,7 +311,7 @@ pcolor, contour or surface_plot need inputs in m">
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 
@@ -346,7 +351,7 @@ pcolor, contour or surface_plot need inputs in m">
     <span class="n">z</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">real</span><span class="p">(</span><span class="n">monopole</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -373,7 +378,7 @@ pcolor, contour or surface_plot need inputs in m">
 <span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">'tripcontourf'</span><span class="p">);</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -383,7 +388,7 @@ pcolor, contour or surface_plot need inputs in m">
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 
@@ -433,7 +438,7 @@ pcolor, contour or surface_plot need inputs in m">
 <span class="c1"># ignore the warning ...</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -443,7 +448,7 @@ pcolor, contour or surface_plot need inputs in m">
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stderr output_text">
@@ -455,7 +460,7 @@ pcolor, contour or surface_plot need inputs in m">
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 

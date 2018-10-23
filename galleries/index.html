@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>galleries | Franz blogs his notes</title>
+<title>galleries | fhchl</title>
 <link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link href="../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
 <link href="../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
@@ -39,11 +39,13 @@ MathJax.Hub.Config({
 
 <!-- Menubar -->
 
-<nav class="navbar navbar-expand-md navbar-dark bg-dark static-top mb-4"><div class="container">
+<nav class="navbar navbar-expand-md static-top mb-4
+navbar-dark bg-dark
+"><div class="container">
 <!-- This keeps the margins nice -->
         <a class="navbar-brand" href="https://fhchl.github.io/">
 
-            <span id="blog-title">Franz blogs his notes</span>
+            <span id="blog-title">fhchl</span>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -93,45 +95,10 @@ MathJax.Hub.Config({
         <script src="../assets/js/all-nocdn.js"></script><!-- fancy dates --><script>
     moment.locale("en");
     fancydates(0, "YYYY-MM-DD HH:mm");
-    </script><!-- end fancy dates --><script src="../assets/js/justified-layout.min.js"></script><script>
+    </script><!-- end fancy dates --><script src="../assets/js/justified-layout.min.js"></script><script src="../assets/js/gallery.min.js"></script><script>
 var jsonContent = [];
-
-function renderGallery() {
-    var container = document.getElementById("gallery_container");
-    container.innerHTML = '';
-    var layoutGeometry = require('justified-layout')(jsonContent, {
-    "containerWidth": container.offsetWidth,
-    "targetRowHeight": 180*.6,
-    "boxSpacing": 5});
-    container.style.height = layoutGeometry.containerHeight + 'px';
-    var boxes = layoutGeometry.boxes;
-    for (var i = 0; i < boxes.length; i++) {
-        var img = document.createElement("img");
-        img.setAttribute('src', jsonContent[i].url_thumb);
-        img.setAttribute('alt', jsonContent[i].title);
-        img.style.width = boxes[i].width + 'px';
-        img.style.height = boxes[i].height + 'px';
-        link = document.createElement("a");
-        link.setAttribute('href', jsonContent[i].url);
-        link.setAttribute('class', 'image-reference');
-        div = document.createElement("div");
-        div.setAttribute('class', 'image-block');
-        div.setAttribute('title', jsonContent[i].title);
-        div.setAttribute('data-toggle', "tooltip")
-        div.style.width = boxes[i].width + 'px';
-        div.style.height = boxes[i].height + 'px';
-        div.style.top = boxes[i].top + 'px';
-        div.style.left = boxes[i].left + 'px';
-        link.append(img);
-        div.append(link);
-        container.append(div);
-    }
-    baguetteBox.run('#gallery_container', {
-        captions: function(element) {
-            return element.getElementsByTagName('img')[0].alt;
-    }});
-}
-renderGallery();
+var thumbnailSize = 180;
+renderGallery(jsonContent, thumbnailSize);
 window.addEventListener('resize', renderGallery);
 </script><script>
     baguetteBox.run('div#content', {

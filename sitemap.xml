@@ -7,38 +7,58 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://fhchl.github.io/</loc>
-  <lastmod>2018-05-29T10:44:00Z</lastmod>
+  <lastmod>2018-10-23T19:23:00Z</lastmod>
  </url>
  <url>
   <loc>https://fhchl.github.io/2017/</loc>
-  <lastmod>2018-05-29T08:56:00Z</lastmod>
+  <lastmod>2018-10-23T19:23:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://fhchl.github.io/2018/</loc>
+  <lastmod>2018-10-23T19:23:00Z</lastmod>
  </url>
  <url>
   <loc>https://fhchl.github.io/about/</loc>
-  <lastmod>2018-05-29T10:44:00Z</lastmod>
+  <lastmod>2018-10-23T19:23:00Z</lastmod>
  </url>
  <url>
   <loc>https://fhchl.github.io/archive.html</loc>
-  <lastmod>2018-05-29T10:44:00Z</lastmod>
+  <lastmod>2018-10-23T19:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://fhchl.github.io/categories/</loc>
-  <lastmod>2018-05-29T08:29:00Z</lastmod>
+  <lastmod>2018-10-23T19:16:00Z</lastmod>
  </url>
  <url>
   <loc>https://fhchl.github.io/galleries/</loc>
-  <lastmod>2018-05-29T08:29:00Z</lastmod>
+  <lastmod>2018-10-23T19:22:00Z</lastmod>
  </url>
  <url>
   <loc>https://fhchl.github.io/listings/</loc>
-  <lastmod>2018-05-29T08:29:00Z</lastmod>
+  <lastmod>2018-10-23T19:16:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://fhchl.github.io/papers/heuchelActiveRoomCompensation2018.html</loc>
+  <lastmod>2018-10-23T19:23:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://fhchl.github.io/papers/heuchelAdaptiveDataDriven2017.html</loc>
+  <lastmod>2018-10-23T19:23:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://fhchl.github.io/papers/heuchelSoundFieldControl2018.html</loc>
+  <lastmod>2018-10-23T19:23:00Z</lastmod>
  </url>
  <url>
   <loc>https://fhchl.github.io/posts/2D-plotting-of-non-ufuncs-with-matplotlib/</loc>
-  <lastmod>2018-05-29T08:56:00Z</lastmod>
+  <lastmod>2018-10-23T19:23:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://fhchl.github.io/posts/a-class-for-representation-and-modification-of-lti-system-responses/</loc>
+  <lastmod>2018-10-23T19:23:00Z</lastmod>
  </url>
  <url>
   <loc>https://fhchl.github.io/posts/meshgrid-and-2d-plotting/</loc>
-  <lastmod>2018-05-29T08:56:00Z</lastmod>
+  <lastmod>2018-10-23T19:23:00Z</lastmod>
  </url>
 </urlset>
